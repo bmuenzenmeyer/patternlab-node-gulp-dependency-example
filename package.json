@@ -9,7 +9,13 @@
     "url": "git://github.com/pattern-lab/patternlab-node.git"
   },
   "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
+    "gulp-header": "^1.7.1",
+    "gulp-load": "^0.1.1",
+    "gulp-nodeunit": "0.0.5",
+    "gulp-strip-banner": "0.0.2",
     "patternlab-node": "git+https://github.com/pattern-lab/patternlab-node.git#dev"
   }
 }

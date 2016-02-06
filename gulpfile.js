@@ -21,11 +21,11 @@ var banner = [ '/** ',
   ' * ', ' **/'].join(eol);
 
 function paths () {
-  return require('./config.json').paths;
+  return require('./patternlab-config.json').paths;
 }
 
 //load patternlab-node tasks
-gulp.loadTasks(__dirname+'/builder/patternlab_gulp.js');
+// gulp.loadTasks(__dirname+'/builder/patternlab_gulp.js');
 
 //clean patterns dir
 gulp.task('clean', function(cb){
@@ -134,6 +134,14 @@ gulp.task('nodeunit', function(){
     .pipe(nodeunit());
 });
 
+// The config and the Pattern Lab itself
+var config = require('./patternlab-config.json'),
+    pl = require('patternlab-node')(config);
+
+gulp.task('patternlab', ['prelab'], function (done) {
+  pl.build(true);
+  done();
+});
 
 gulp.task('lab-pipe', ['lab'], function(cb){
   cb();
