@@ -1,0 +1,15 @@
+{
+  "name": "patternlab-node-gulp-dependency-example",
+  "version": "0.0.1",
+  "description": "Example using Pattern Lab Node used as a dependency within a larger Gulp configuration",
+  "author": "Brian Muenzenmeyer <brian.muenzenmeyer@gmail.com> (http://brianmuenzenmeyer.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pattern-lab/patternlab-node.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "patternlab-node": "git+https://github.com/pattern-lab/patternlab-node.git#dev"
+  }
+}
