@@ -16,6 +16,6 @@
     "gulp-load": "^0.1.1",
     "gulp-nodeunit": "0.0.5",
     "gulp-strip-banner": "0.0.2",
-    "patternlab-node": "git+https://github.com/pattern-lab/patternlab-node.git#dev"
+    "patternlab-node": "^1.0.0"
   }
 }
